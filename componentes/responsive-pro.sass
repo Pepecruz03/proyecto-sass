@@ -1,0 +1,80 @@
+@import ./mixin.sass
+
+nav
+        display: flex
+        height: 40px
+        justify-content: center
+        padding: 0px 10px
+        ul
+            display: flex
+            list-style: none
+            gap: 40px
+            a
+                @include letra-menu()
+                font-size: 25px
+                text-decoration: none
+                color: #17c5c5
+
+.productos
+        display: block
+        align-items: center
+        @include letra-descripcion()
+        .imagen
+            display: flex
+            justify-content: center
+
+        img
+            width: 80%
+            height: 200px
+            display: flex
+            justify-content: center
+        
+        .precio
+            display: flex
+            justify-content: center
+            @include letra-precio()
+        
+            
+
+
+
+                
+@media only screen and (min-width: 768px)
+    nav
+        display: flex
+        height: 40px
+        justify-content: flex-end
+        padding: 0px 30px
+        ul
+            display: flex
+            list-style: none
+            gap: 40px
+            a
+                @include letra-menu()
+                font-size: 25px
+                text-decoration: none
+                color: #17c5c5
+
+    .productos
+        display: flex
+        align-items: center
+        @include letra-descripcion()
+        .imagen
+            display: flex
+            justify-content: center
+
+        img
+            width: auto
+            height: auto
+            display: flex
+            justify-content: center
+        
+        .precio
+            display: flex
+            justify-content: center
+            @include letra-precio()
+
+@media only screen and (min-width: 992px)
+
+
+@media only screen and (min-width: 1200px)

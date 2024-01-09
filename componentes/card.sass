@@ -1,9 +1,20 @@
+@import ./mixin.sass
 $ancho:100%
 $alto:150px
-main
+.menu-fila
+    display: grid
+    justify-items: center
+    padding: 0px 0px 0px 20px
+    .producto
+        display: flex
+    img
+        display: flex
+
+.boxes
     display: grid
     grid-template-columns: repeat(1,1fr)
     justify-items: center
+    padding: 0px 0px 0px 20px
 .tarjet
     display: flex
     flex-direction: column
@@ -13,6 +24,17 @@ main
     width: 50%
     img
         width: $ancho
-        height: $alto
+        height:$alto
+
+.precio-tarjet
+    @include letra-precio()
+
+.nombre-tarjet
+    @include letra-descripcion()
+    display: flex
+    span
+        display: flex
+        justify-content: center
+        align-items: center
 
 

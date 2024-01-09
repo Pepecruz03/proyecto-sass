@@ -1,23 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
 .imagen-head {
-  background-image: url("./Farmacia.jpg");
+  background-image: url("./recursos/Farmacia.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
-.texto-head {
-  font-family: "Lemon", serif;
-  font-weight: 400;
-  background-color: transparent;
-  z-index: 1;
+.menu-fila {
+  display: grid;
+  justify-items: center;
+  padding: 0px 0px 0px 20px;
+}
+.menu-fila .producto {
+  display: flex;
+}
+.menu-fila img {
+  display: flex;
 }
 
-main {
+.boxes {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
+  padding: 0px 0px 0px 20px;
 }
 
 .tarjet {
@@ -35,8 +44,56 @@ main {
   height: 150px;
 }
 
+.precio-tarjet {
+  font-size: 20px;
+  font-weight: 500;
+  color: green;
+}
+
+.nombre-tarjet {
+  font-family: "Nixie One", system-ui;
+  font-weight: 900;
+  display: flex;
+}
+.nombre-tarjet span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-head {
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 16%;
+  width: 100%;
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0px 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+nav ul a {
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: #17c5c5;
+}
+
 @media only screen and (min-width: 768px) {
-  main {
+  .boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -58,49 +115,57 @@ main {
 }
 
 @media only screen and (min-width: 992px) {
-  main {
+  .boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
   }
+  .tarjet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-tarjet {
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    height: 220px;
+  }
+  nav {
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    padding: 0px 30px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  nav ul a {
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #17c5c5;
+  }
+  .texto-head {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+  }
 }
-.tarjet {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-tarjet {
-  width: 50%;
-}
-.img-tarjet img {
-  width: 100%;
-  height: 220px;
-}
-
-nav {
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  padding: 0px 10px;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-}
-nav ul a {
-  font-family: "Instrument Serif", serif;
-  font-size: 25px;
-  text-decoration: none;
-  color: #17c5c5;
-}
-
 footer {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
   background-color: black;
   color: white;
-  height: 20px;
+  height: 40px;
   font-weight: 600;
 }
 
@@ -111,10 +176,4 @@ footer {
 
 body {
   background: url("./recursos/paven.png");
-}
-
-.precio-tarjet {
-  font-size: 20px;
-  font-weight: 300;
-  color: green;
 }/*# sourceMappingURL=style.css.map */

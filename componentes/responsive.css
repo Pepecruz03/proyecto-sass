@@ -1,5 +1,36 @@
+.texto-head {
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 16%;
+  width: 100%;
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0px 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+nav ul a {
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: #17c5c5;
+}
+
 @media only screen and (min-width: 768px) {
-  main {
+  .boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -21,41 +52,47 @@
 }
 
 @media only screen and (min-width: 992px) {
-  main {
+  .boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
   }
-}
-.tarjet {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-tarjet {
-  width: 50%;
-}
-.img-tarjet img {
-  width: 100%;
-  height: 220px;
-}
-
-nav {
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  padding: 0px 10px;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-}
-nav ul a {
-  font-family: "Instrument Serif", serif;
-  font-size: 25px;
-  text-decoration: none;
-  color: #17c5c5;
+  .tarjet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-tarjet {
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    height: 220px;
+  }
+  nav {
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    padding: 0px 30px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  nav ul a {
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #17c5c5;
+  }
+  .texto-head {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+  }
 }/*# sourceMappingURL=responsive.css.map */

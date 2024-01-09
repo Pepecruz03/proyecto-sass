@@ -1,7 +1,20 @@
-main {
+.menu-fila {
+  display: grid;
+  justify-items: center;
+  padding: 0px 0px 0px 20px;
+}
+.menu-fila .producto {
+  display: flex;
+}
+.menu-fila img {
+  display: flex;
+}
+
+.boxes {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
+  padding: 0px 0px 0px 20px;
 }
 
 .tarjet {
@@ -17,4 +30,21 @@ main {
 .img-tarjet img {
   width: 100%;
   height: 150px;
+}
+
+.precio-tarjet {
+  font-size: 20px;
+  font-weight: 500;
+  color: green;
+}
+
+.nombre-tarjet {
+  font-family: "Nixie One", system-ui;
+  font-weight: 900;
+  display: flex;
+}
+.nombre-tarjet span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=card.css.map */

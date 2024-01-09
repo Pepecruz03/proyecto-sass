@@ -1,1 +1,1 @@
-{"version":3,"sources":["banner.sass","banner.css","mixin.sass"],"names":[],"mappings":"AACA;EACI,uCAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;ACAJ;;ADGA;EEFI,2BAAA;EACA,gBAAA;EFGA,6BAAA;EACA,UAAA;ACCJ","file":"banner.css"}
+{"version":3,"sources":["banner.sass","banner.css"],"names":[],"mappings":"AACA;EACI,gDAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,4BAAA;ACAJ","file":"banner.css"}
