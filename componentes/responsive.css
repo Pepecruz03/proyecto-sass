@@ -45,11 +45,17 @@
 nav {
   display: flex;
   height: 40px;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0px 10px;
 }
 nav ul {
   display: flex;
   list-style: none;
-  gap: 18px;
+  gap: 40px;
+}
+nav ul a {
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: #17c5c5;
 }/*# sourceMappingURL=responsive.css.map */
