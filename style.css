@@ -76,9 +76,12 @@
 
 nav {
   display: flex;
+  position: sticky;
+  top: 0px;
   height: 40px;
   justify-content: center;
   padding: 0px 10px;
+  background: url("./recursos/paven.png");
 }
 nav ul {
   display: flex;
@@ -134,10 +137,13 @@ nav ul a {
     height: 220px;
   }
   nav {
+    position: sticky;
+    top: 0px;
     display: flex;
     height: 40px;
     justify-content: flex-end;
     padding: 0px 30px;
+    background: url("./recursos/paven.png");
   }
   nav ul {
     display: flex;

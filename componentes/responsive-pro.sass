@@ -1,10 +1,16 @@
 @import ./mixin.sass
-
+.proximamente
+    img
+        width: 100%
+        height: 100vh
 nav
         display: flex
+        position: sticky
+        top: 0px
         height: 40px
         justify-content: center
         padding: 0px 10px
+        background: url("./recursos/paven.png")
         ul
             display: flex
             list-style: none
@@ -42,9 +48,12 @@ nav
 @media only screen and (min-width: 768px)
     nav
         display: flex
+        position: sticky
+        top: 0px
         height: 40px
-        justify-content: flex-end
-        padding: 0px 30px
+        justify-content: center
+        padding: 0px 10px
+        background: url("./recursos/paven.png")
         ul
             display: flex
             list-style: none
