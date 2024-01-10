@@ -54,7 +54,7 @@ nav ul a {
     position: sticky;
     top: 0px;
     height: 40px;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0px 10px;
     background: url("./recursos/paven.png");
   }
